@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:columnCount="2">
+
+        <ImageView
+            android:id="@+id/addNewProduct"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/button_addProduct"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/addfood"/>
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/button_controlZone"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/controlzone"/>
+        <ImageView
+            android:id="@+id/button_configuration"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/configuration"/>
+        <ImageView
+            android:id="@+id/button_showRecipes"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:layout_margin="25dp"
+            android:src="@drawable/recipes"/>
+    </GridLayout>
+    </LinearLayout>
